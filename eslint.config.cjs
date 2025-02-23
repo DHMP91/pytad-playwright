@@ -5,7 +5,7 @@ module.exports = [
   {
     plugins: { playwright },
     ...playwright.configs["flat/recommended"],
-    files: ["tests/**"],
+    files: ["tests/**", "page-objects/**"],
     rules: { ...playwright.configs["flat/recommended"].rules },
   },
   {
